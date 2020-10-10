@@ -16,5 +16,5 @@ def tulis(text):
     line=190
     for i in spliter:
         draw.text((170, int(line)), i, font=font, fill=(0, 0, 0)) #selisih = Line
-        line+=37 + 0.9
+        line+=37 + 2.2
     return img
