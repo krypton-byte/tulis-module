@@ -7,6 +7,8 @@ def tulis(text):
     img, font, kata, tempkata=Image.open("lib/before.jpg"), ImageFont.truetype("lib/IndieFlower.ttf",24),'',''
     draw=ImageDraw.Draw(img)
     if type(text) is not list:
+        global output
+        output=[]
         for i in text:
             if draw.textsize(tempkata, font)[0] < 734:
                 tempkata+=i
