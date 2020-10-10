@@ -7,9 +7,11 @@ pip3 install pillow
 $ python3
 >>> from lib.nulis import tulis
 >>> tulis=tulis("Nama : Krypton-Byte")
->>> tulis.show() #menampilkan gambar tulisan
->>> tulis.save("catatan.jpg") #menyimpan hasil gambar
+>>> for i in tulis:
+>>>     i.show() #menampilkan gambar tulisan
+>>>     i.save("catatan.jpg") #menyimpan hasil gambar
 ```
-support otomatis garis baru ketika sudah sampai ujung kanan<br>
+support otomatis garis baru ketika sudah sampai ujung kanan
+dan penambahan kertas ketika tidak cukup<br>
 <b> Hasil</b>
 <img src="catatan.jpg">
