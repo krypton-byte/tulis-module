@@ -2,17 +2,17 @@ from PIL import Image, ImageDraw, ImageFont
 """
 Bot Tulis Sangat cocok Untuk anda Yg Malas Menulis :v
 """
-__author__="Krypton-Byte, MhankBarBar, NoneX9, Underifi, Kitsune, ITacHi, GiovalIT"
+__author__="Krypton-Byte, MhankBarBar, NoneX9, Underfif, Kitsune, ITacHi, GiovalIT"
 __title__ ="BotTulis"
 license   ="MIT License"
 class tulis:
+    """
+    listOrText : String
+    """
     def __init__(self, listOrText):
         self.text = listOrText
         self.output = []
     def tulis(self):
-        '''
-        text : string
-        '''
         img, font, kata, tempkata=Image.open("nulis/before.jpg"), ImageFont.truetype("nulis/IndieFlower.ttf",24),'',''
         draw=ImageDraw.Draw(img)
         if type(self.text) is not list:
