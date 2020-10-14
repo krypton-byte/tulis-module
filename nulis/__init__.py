@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 """
 Bot Tulis Sangat cocok Untuk anda Yg Malas Menulis :v
 """
-__author__="Krypton-Byte, MhankBarBar, NoneX9, Underifi, Kitsune, ITacHi, GiovalIT"
+__author__="Krypton-Byte, MhankBarBar, NoneX9, Underfif, Kitsune, ITacHi, GiovalIT"
 __title__ ="BotTulis"
 license   ="MIT License"
 class tulis:
