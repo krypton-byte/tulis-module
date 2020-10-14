@@ -1,8 +1,8 @@
-<b> Installansi</b>
+<b> installation</b>
 ```bash
 $ pip3 install pillow
 ```
-<b> cara penggunaan</b>
+<b> how to use</b>
 ```bash
 $ python3
 ```
@@ -13,7 +13,6 @@ $ python3
 >>>     i.show() #menampilkan gambar tulisan
 >>>     i.save("catatan.jpg") #menyimpan hasil gambar
 ```
-support otomatis garis baru ketika sudah sampai ujung kanan
-dan penambahan kertas ketika tidak cukup<br>
+Automatic support for new lines when it reaches the right end and adding paper when not enough<br>
 <b> Hasil</b>
 <img src="catatan.jpg">
