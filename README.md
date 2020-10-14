@@ -14,5 +14,5 @@ $ python3
 >>>     i.save("catatan.jpg") #menyimpan hasil gambar
 ```
 Automatic support for new lines when it reaches the right end and adding paper when not enough<br>
-<b> Hasil</b>
+<b>Result</b><br>
 <img src="catatan.jpg">
