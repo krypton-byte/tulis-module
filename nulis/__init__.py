@@ -31,7 +31,6 @@ class tulis:
         for i in spliter[:25]:
             draw.text((170, int(line)), i, font=font, fill=(0, 0, 0)) #selisih = Line
             line+=37 + 2.2
-        print(spliter)
         self.output.append(img)
         if len(spliter) > 25:
             self.output+=tulis(spliter[25:]).tulis()
