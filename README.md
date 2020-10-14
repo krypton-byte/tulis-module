@@ -1,13 +1,15 @@
 <b> Installansi</b>
-```
-pip3 install pillow
+```bash
+$ pip3 install pillow
 ```
 <b> cara penggunaan</b>
-```
+```bash
 $ python3
->>> from lib.nulis import tulis
+```
+```python
+>>> from nulis import tulis
 >>> tulis=tulis("Nama : Krypton-Byte")
->>> for i in tulis:
+>>> for i in tulis.tulis():
 >>>     i.show() #menampilkan gambar tulisan
 >>>     i.save("catatan.jpg") #menyimpan hasil gambar
 ```
