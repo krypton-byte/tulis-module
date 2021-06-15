@@ -1,6 +1,6 @@
 <b> installation</b>
 ```bash
-$ pip3 install pillow
+$ pip3 install tulis
 ```
 <b> how to use</b>
 ```bash
@@ -9,7 +9,7 @@ $ python3
 ```python
 >>> from nulis import tulis
 >>> tulis=tulis("Nama : Krypton-Byte")
->>> for i in tulis.tulis():
+>>> for i in tulis.tulis:
 >>>     i.show() #show image
 >>>     i.save("catatan.jpg") #save the results
 ```
