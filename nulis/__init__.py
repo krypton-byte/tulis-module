@@ -1,5 +1,6 @@
 from concurrent.futures import ThreadPoolExecutor
 import os
+from typing import Literal, Union
 from PIL import Image, ImageDraw, ImageFont
 """
 Bot Tulis Sangat cocok Untuk anda Yg Malas Menulis :v
@@ -42,8 +43,9 @@ class _tulis:
             draw.text((170, int(line)), i, font=font, fill=(0, 0, 0)) #selisih = Line
             line+=37 + 2.2
         return img
-    def write(self, text, worker):
-        return ThreadPoolExecutor(max_workers=worker).map(self._write, self.sheets(self.parser(text)))
+    def write(self, text: str, worker: Union[int, Literal['auto']]):
+        sheets = self.sheets(self.parser(text))
+        return ThreadPoolExecutor(max_workers=sheets.__len__() if worker == 'auto' else worker).map(self._write, sheets)
     def sheets(self, l:list):
         if l:
             return [l[:25]]+self.sheets(l[25:])
@@ -77,12 +79,11 @@ class _tulis:
         return self.output"""
 
 class tulis:
-    def __init__(self, text, worker=10) -> None:
-        self.text = text
-        self.generate =_tulis().write(text, worker)
-        self.woker = worker
+    def __init__(self, text: str, worker: Union[int, Literal['auto']] = 'auto') -> None:
+        self.text: str = text
+        self.worker: Union[int, Literal['auto']] = worker
     def __iter__(self):
-        return self.generate
+        yield from _tulis().write(self.text, self.worker)
     def __enter__(self):
         return self.__iter__()
     def __exit__(self, *args):
